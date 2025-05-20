@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "jenkins_sg" {
-  name        = "jenkins-security-group"
+  name        = "jenkins-security-group-brahma"
   description = "Allow SSH and Jenkins access"
   
   ingress {
