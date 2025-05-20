@@ -29,9 +29,8 @@ resource "aws_security_group" "jenkins_sg" {
 }
 
 resource "aws_instance" "jenkins_server" {
-  ami           = "ami-0abcdef1234567890" # Replace with latest Ubuntu AMI
+  ami           = "ami-0f88e80871fd81e91"
   instance_type = "t2.medium"
-  key_name      = "your-key-pair"
   security_groups = [aws_security_group.jenkins_sg.name]
 
   user_data = <<-EOF
